@@ -1,0 +1,26 @@
+{
+  "name": "macaca-zz",
+  "version": "1.0.1",
+  "description": "macaca-zz",
+  "keywords": [
+    "macaca",
+    "zz"
+  ],
+  "repository": {},
+  "dependencies": {
+    "macaca-utils": "^0.1.8"
+  },
+  "devDependencies": {
+    "jshint": "*",
+    "macaca-cli": "^1.1.0",
+    "macaca-electron": "^1.0.7",
+    "pre-commit": "1.1.1",
+    "webdriver-client": "~1.0.0",
+    "xml2map": "^1.0.2"
+  },
+  "scripts": {},
+  "pre-commit": [
+    "jshint"
+  ],
+  "license": "MIT"
+}
