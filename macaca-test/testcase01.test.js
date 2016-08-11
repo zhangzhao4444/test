@@ -18,7 +18,7 @@ var androidOpts = {
   platformName: 'Android',
   //package: 'com.github.android_app_bootstrap',
   //activity: 'com.github.android_app_bootstrap.activity.WelcomeActivity',
-  app: path.join(__dirname, '..', 'app', `${platform}-huajiaovr.zip`)
+  app:'http://pkg3.fir.im/120ff02dbabc2899ee9dc1b1f510972045658c26.apk'
 };
 
 var wd = require('webdriver-client')(_.merge({}, platform === 'ios' ? iOSOpts : androidOpts));
@@ -77,7 +77,7 @@ describe('macaca zz',function(){
     it('#3 search user zhangzhaoa',function(){
        //return driver.waitForElement("new UISelector().text",'snowan').tap();
        //return driver.waitForElementByXPath("//android.widget.TextView[contains(@text,'snowan')]").tap();
-       return driver.waitForElementByName('张钊啊','3000','100').tap();
+       return driver.waitForElementByName('张钊�?,'3000','100').tap();
     });
 
     it('#4 enter vr room',function(){
