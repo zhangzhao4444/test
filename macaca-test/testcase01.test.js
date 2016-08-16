@@ -15,11 +15,17 @@ var iOSOpts = {
 };
 
 var androidOpts = {
+  //udid : '4d006a744bd84177',
   platformName: 'Android',
   //package: 'com.github.android_app_bootstrap',
   //activity: 'com.github.android_app_bootstrap.activity.WelcomeActivity',
   app:'http://pkg3.fir.im/120ff02dbabc2899ee9dc1b1f510972045658c26.apk'
   //app: path.join(__dirname, '..', 'app', `${platform}-huajiaovr.zip`)
+};
+
+if (process.env.UDID){
+    androidOpts.udid=process.env.UDID;
+    iOSOpts.udid=process.env.UDID;
 };
 
 var wd = require('webdriver-client')(_.merge({}, platform === 'ios' ? iOSOpts : androidOpts));
